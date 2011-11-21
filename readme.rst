@@ -11,14 +11,14 @@ http://dl.dropbox.com/u/8396628/mobile-python.png
 Goals
 -----
 
-- Bring a cross-browser compatiple Python shell experience to the browser
+- Bring a cross-browser compatible Python shell experience to the browser
 - Allow people to save shell input/output and playback
 - Allow people to share with Twitter/Facebook
 
 Todo
 ----
 
-- Make it use a full python shell instead of "python -c"
+- Make use of a full python shell, instead of "python -c"
 - Allow users to save progress and designate a URL to share
 - Twitter/Facebook Integration
 - Make arrow keys for command history work cross-browser
