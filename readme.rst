@@ -4,6 +4,10 @@ Mobile Python
 
 The primary purpose of this project is to bring the the Python shell with multiple versions into the browser.
 
+Screenshot:
+
+http://dl.dropbox.com/u/8396628/mobile-python.png
+
 Goals
 -----
 
@@ -22,7 +26,7 @@ Todo
 Dependencies
 ------------
 
-* NodeJS - .. _http://nodejs.org/: http://nodejs.org/
+* NodeJS - http://nodejs.org/
 
 How to use
 ----------
