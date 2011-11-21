@@ -27,6 +27,7 @@ Dependencies
 ------------
 
 * NodeJS - http://nodejs.org/
+* Python 2.5, 2.6, 2.7, 3.2
 
 How to use
 ----------
