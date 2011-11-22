@@ -1,9 +1,19 @@
+/**
+* Shell Class - Classy Object
+*
+* Controls the shell in the UI
+*  - Makes the prompt
+*  - Keeps history
+*  - Changes python versions
+*  - Displays output
+*
+*/
 var Shell = Class.$extend({
     __init__ : function() {
         this.url = "http://localhost:8008/";
         this.cmd_q = [];
         this.cmd_q_pointer = 0;
-        this.version = '2.7'
+        this.version = '2.7';
 
         // set up some default elements
         this._skel = $('div#shell');
@@ -15,7 +25,7 @@ var Shell = Class.$extend({
         this.input = '<input onfocus="this.value = this.value;" id="shell_input" type="text" name="command" value="" />';
 
         // render the shell prompt and set events
-    this.start();
+        this.start();
     },
   start : function() {
       this.render_version();
@@ -32,7 +42,7 @@ var Shell = Class.$extend({
   },
     set_events : function() {
         var _this = this;
-        this._input.keypress(function(eh) {
+        this._input.keydown(function(eh) {
             if (eh.keyCode == 13) {
                 var command = $(this).val();
                 _this.cmd_q_pointer = 0;
@@ -97,6 +107,9 @@ var Shell = Class.$extend({
 })
 var shell = Shell();
 
+/**
+* Version Changer
+*/
 $('a.python-version').click(function() {
    $('a.python-version').each(function() {
        $(this).removeClass('selected');

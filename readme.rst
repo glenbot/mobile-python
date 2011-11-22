@@ -21,7 +21,6 @@ Todo
 - Make use of a full python shell, instead of "python -c"
 - Allow users to save progress and designate a URL to share
 - Twitter/Facebook Integration
-- Make arrow keys for command history work cross-browser
 
 Dependencies
 ------------
